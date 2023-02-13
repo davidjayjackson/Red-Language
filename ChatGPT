@@ -1,0 +1,28 @@
+```
+
+## AI Baby
+
+(2)	Jan. 12, 2023
+(1) Calculate the Fibonacci sequence in the red language
+(2) Calculate compound interest where principal is 100,000, interest is 05% and tine is 60 months. Display last 12 months principal, total amount for each month.
+(3) Read csv file. file contains two columns: date and close. Display column type for two columns. Calculate 30 day moving average. 
+Display results in table. (4) Create a line plot, line(1) display data and close, line 2 display date and moving average.
+
+(1) Fibonacci sequence
+red[]
+fib: func [n][
+    if n < 2 [return n]
+    return fib(n - 1) + fib(n - 2)
+]
+
+count: 100
+sequence: make block! count
+
+loop i count [
+    sequence/:i: fib i
+]
+
+print sequence
+
+
+```
